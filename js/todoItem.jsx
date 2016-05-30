@@ -21,7 +21,7 @@ var app = app || {};
 
 		handleSubmit: function () {
 			var val = this.state.editText.trim();
-			if (val) {
+			if (val || !val) {
 				this.props.onSave(val);
 				this.setState({editText: val});
 			} else {

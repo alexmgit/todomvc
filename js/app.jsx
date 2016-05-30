@@ -91,7 +91,7 @@ var app = app || {};
 			}
 
 			var val = React.findDOMNode(this.refs.newField).value.trim();
-			if (val) {
+			if (val || !val) {
 				this.props.todos.create({
 					title: val,
 					completed: false,
@@ -126,7 +126,7 @@ var app = app || {};
 
 		clearCompleted: function () {
 			this.props.todos.completed().forEach(function (todo) {
-				todo.destroy();
+				//todo.destroy();
 			});
 		},
 
