@@ -200,7 +200,7 @@ var app = app || {};
 						<input
 							ref="newField"
 							className="new-todo"
-							placeholder="What needs to be done?"
+							placeholder="What needs to be dne?"
 							onKeyDown={this.handleNewTodoKeyDown}
 							autoFocus={true}
 						/>
